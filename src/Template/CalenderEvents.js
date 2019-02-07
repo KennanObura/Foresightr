@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import BigCalendar from 'react-big-calendar'
-import moment from 'moment'
+import BigCalendar from 'react-big-calendar';
+
+import moment from 'moment';
+
+import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 //for test
 import Events from './Dummies/Events';
@@ -19,6 +22,10 @@ class CalenderEvents extends Component {
                                 events={Events}
                                 startAccessor="start"
                                 endAccessor="end"
+                                step={60}
+                                views={['day','week','month']}
+                                defaultView='week'
+                                
                             />
                         </div>
                     </div>
