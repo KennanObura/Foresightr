@@ -1,8 +1,62 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
 import '../custom.css';
+import DatePicker from "react-datepicker";
+ 
+import "react-datepicker/dist/react-datepicker.css";
 
+
+const customStyles = {
+    content : {
+      top                   : '60%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)',
+      width : '25%'
+    }
+  };
+
+  //bind modal to appelement
+
+  Modal.setAppElement('#root')
 
 class Newtask extends Component {
+
+
+    constructor(props) {
+    super(props);
+    this.state = {
+      startDate: new Date(),
+      modalIsOpen: false
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+ 
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // this.subtitle.style.color = '#f00';
+  }
+ 
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
+ 
+  handleChange(date) {
+    this.setState({
+      startDate: date
+    });
+  }
+
     render() {
 
         
@@ -35,7 +89,10 @@ class Newtask extends Component {
                                 <div className="col-lg-11 col-md-10 col-sm-10 col-xs-12">
                                     <div className="form-group">
                                         <div className="nk-int-st cmp-int-in cmp-email-over">
-                                            <input type="text" className="form-control" placeholder="05/02/2019" />
+                                            <DatePicker 
+                                            selected={this.state.startDate}
+                                            onChange={this.handleChange}
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -49,7 +106,10 @@ class Newtask extends Component {
                                 <div className="col-lg-11 col-md-10 col-sm-10 col-xs-12">
                                     <div className="form-group cmp-em-mg">
                                         <div className="nk-int-st cmp-int-in cmp-email-over">
-                                            <input type="text" className="form-control" placeholder="20/02/2019" />
+                                        <DatePicker 
+                                            selected={this.state.startDate}
+                                            onChange={this.handleChange}
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -61,15 +121,21 @@ class Newtask extends Component {
                             </div>
                         </div>
 
-                        <div className="vw-ml-action-ls text-right mg-t-20">
+                       
+                    </div>
+                </div>
+            )
+        }
+
+        const ViewtaskActions = () => {
+            return( 
+            <div className="vw-ml-action-ls text-right mg-t-20">
                             <div className="btn-group ib-btn-gp active-hook nk-email-inbox">
                                 <button className="btn btn-default btn-sm waves-effect"><i className="notika-icon notika-right-arrow"></i> Forward</button>
                                 <button className="btn btn-default btn-sm waves-effect"><i className="notika-icon notika-trash"></i> Remove</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            )
+                        )
         }
 
 
@@ -91,7 +157,7 @@ class Newtask extends Component {
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <div className="popover-cl-pro">
-                                    <button className="btn btn-primary" data-toggle="popover" >+
+                                    <button onClick={this.openModal} className="btn btn-primary" data-toggle="popover" >+
                                 </button>
                                 </div>
                             </div>
@@ -108,6 +174,21 @@ class Newtask extends Component {
             <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
                 <Newtask />
                 <Taskview />
+
+                <Modal
+                    isOpen={this.state.modalIsOpen}
+                    onAfterOpen={this.afterOpenModal}
+                    onRequestClose={this.closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal"
+                    >
+                    <div className="popover-cl-pro">
+                    <button onClick={this.closeModal} className="btn btn-primary"  >x
+                                </button>
+                                </div>
+                    <Taskview/>
+                    
+        </Modal>
           
             </div>
         );
