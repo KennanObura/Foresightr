@@ -24,7 +24,8 @@ class CalenderEvents extends Component {
                                 endAccessor="end"
                                 step={60}
                                 views={['day','week','month']}
-                                defaultView='week'
+                                defaultView='day'
+                                style={{ height: '43vh' }}
                                 
                             />
                         </div>

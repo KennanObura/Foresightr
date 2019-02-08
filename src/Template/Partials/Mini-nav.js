@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Mininav extends Component {
     render() {
@@ -12,7 +13,7 @@ class Mininav extends Component {
                             <ul className="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
                                 <li><a data-toggle="tab" href="#Home"><i className="notika-icon notika-house"></i> Home</a>
                                 </li>
-                                <li className="active"><a data-toggle="tab" href="#mailbox"><i className="notika-icon notika-mail"></i> Email</a>
+                                <li className="active"><a data-toggle="tab" href="#mailbox"><i className="notika-icon notika-mail"></i> Actions</a>
                                 </li>
                                 <li><a data-toggle="tab" href="#Tables"><i className="notika-icon notika-windows"></i> Tables</a>
                                 </li>
@@ -31,11 +32,11 @@ class Mininav extends Component {
                                 </div>
                                 <div id="mailbox" className="tab-pane active notika-tab-menu-bg animated flipInX">
                                     <ul className="notika-main-menu-dropdown">
-                                        <li><a href="inbox.html">Inbox</a>
+                                        <li><Link to="/home/">Running</Link>
                                         </li>
-                                        <li><a href="view-email.html">View Email</a>
+                                        <li><Link to="/home/achieved">Achieved</Link>
                                         </li>
-                                        <li><a href="compose-email.html">Compose Email</a>
+                                        <li><Link to="/home/flagged">Flagged</Link>
                                         </li>
                                     </ul>
                                 </div>

@@ -24,7 +24,7 @@ class Inprogress extends Component {
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-xs-3">
                                         <div className="breadcomb-report">
-                                            <button data-toggle="tooltip" data-placement="left" title="Download Report" className="btn"><i className="notika-icon notika-sent"></i></button>
+                                            <button data-placement="left" className="btn notika-btn-gray"><i className=""></i>Actions/Achieved</button>
                                         </div>
                                     </div>
                                 </div>
