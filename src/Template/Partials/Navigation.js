@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
     render() {
@@ -10,14 +10,14 @@ class Navigation extends Component {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div className="logo-area">
-                                <a href="#"><img src="img/logo/logo.png" alt="" /></a>
+                                <Link to="/"><img src="img/logo/logo.png" alt="" /></Link>
                             </div>
                         </div>
                         <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <div className="header-top-menu">
                                 <ul className="nav navbar-nav notika-top-nav">
                                     <li className="nav-item dropdown">
-                                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-link dropdown-toggle"><span><i className="notika-icon notika-search"></i></span></a>
+                                        <Link to="/" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-Link dropdown-toggle"><span><i className="notika-icon notika-search"></i></span></Link>
                                         <div role="menu" className="dropdown-menu search-dd animated flipInX">
                                             <div className="search-input">
                                                 <i className="notika-icon notika-left-arrow"></i>
@@ -26,13 +26,13 @@ class Navigation extends Component {
                                         </div>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-link dropdown-toggle"><span><i className="notika-icon notika-mail"></i></span></a>
+                                        <Link to="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-Link dropdown-toggle"><span><i className="notika-icon notika-mail"></i></span></Link>
                                         <div role="menu" className="dropdown-menu message-dd animated zoomIn">
                                             <div className="hd-mg-tt">
                                                 <h2>Messages</h2>
                                             </div>
                                             <div className="hd-message-info">
-                                                <a href="#">
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/1.jpg" alt="" />
@@ -42,8 +42,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/2.jpg" alt="" />
@@ -53,8 +53,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/4.jpg" alt="" />
@@ -64,8 +64,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/1.jpg" alt="" />
@@ -75,8 +75,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/2.jpg" alt="" />
@@ -86,20 +86,20 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="hd-mg-va">
-                                                <a href="#">View All</a>
+                                                <Link to="#">View All</Link>
                                             </div>
                                         </div>
                                     </li>
-                                    <li className="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-link dropdown-toggle"><span><i className="notika-icon notika-alarm"></i></span><div className="spinner4 spinner-4"></div><div className="ntd-ctn"><span>3</span></div></a>
+                                    <li className="nav-item nc-al"><Link to="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-Link dropdown-toggle"><span><i className="notika-icon notika-alarm"></i></span><div className="spinner4 spinner-4"></div><div className="ntd-ctn"><span>3</span></div></Link>
                                         <div role="menu" className="dropdown-menu message-dd notification-dd animated zoomIn">
                                             <div className="hd-mg-tt">
                                                 <h2>Notification</h2>
                                             </div>
                                             <div className="hd-message-info">
-                                                <a href="#">
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/1.jpg" alt="" />
@@ -109,8 +109,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/2.jpg" alt="" />
@@ -120,8 +120,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/4.jpg" alt="" />
@@ -131,8 +131,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/1.jpg" alt="" />
@@ -142,8 +142,8 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img">
                                                             <img src="img/post/2.jpg" alt="" />
@@ -153,14 +153,14 @@ class Navigation extends Component {
                                                             <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="hd-mg-va">
-                                                <a href="#">View All</a>
+                                                <Link to="#">View All</Link>
                                             </div>
                                         </div>
                                     </li>
-                                    <li className="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-link dropdown-toggle"><span><i className="notika-icon notika-menus"></i></span><div className="spinner4 spinner-4"></div><div className="ntd-ctn"><span>2</span></div></a>
+                                    <li className="nav-item"><Link to="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-Link dropdown-toggle"><span><i className="notika-icon notika-menus"></i></span><div className="spinner4 spinner-4"></div><div className="ntd-ctn"><span>2</span></div></Link>
                                         <div role="menu" className="dropdown-menu message-dd task-dd animated zoomIn">
                                             <div className="hd-mg-tt">
                                                 <h2>Tasks</h2>
@@ -201,11 +201,11 @@ class Navigation extends Component {
                                                 </div>
                                             </div>
                                             <div className="hd-mg-va">
-                                                <a href="#">View All</a>
+                                                <Link to="#">View All</Link>
                                             </div>
                                         </div>
                                     </li>
-                                    <li className="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-link dropdown-toggle"><span><i className="notika-icon notika-chat"></i></span></a>
+                                    <li className="nav-item"><Link to="#" data-toggle="dropdown" role="button" aria-expanded="false" className="nav-Link dropdown-toggle"><span><i className="notika-icon notika-chat"></i></span></Link>
                                         <div role="menu" className="dropdown-menu message-dd chat-dd animated zoomIn">
                                             <div className="hd-mg-tt">
                                                 <h2>Chat</h2>
@@ -215,7 +215,7 @@ class Navigation extends Component {
                                                 <input type="text" placeholder="Search People" />
                                             </div>
                                             <div className="hd-message-info">
-                                                <a href="#">
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img chat-img">
                                                             <img src="img/post/1.jpg" alt="" />
@@ -226,8 +226,8 @@ class Navigation extends Component {
                                                             <p>Available</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img chat-img">
                                                             <img src="img/post/2.jpg" alt="" />
@@ -237,8 +237,8 @@ class Navigation extends Component {
                                                             <p>Last seen 3 hours ago</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img chat-img">
                                                             <img src="img/post/4.jpg" alt="" />
@@ -248,8 +248,8 @@ class Navigation extends Component {
                                                             <p>Last seen 2 minutes ago</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img chat-img">
                                                             <img src="img/post/1.jpg" alt="" />
@@ -260,8 +260,8 @@ class Navigation extends Component {
                                                             <p>Available</p>
                                                         </div>
                                                     </div>
-                                                </a>
-                                                <a href="#">
+                                                </Link>
+                                                <Link to="#">
                                                     <div className="hd-message-sn">
                                                         <div className="hd-message-img chat-img">
                                                             <img src="img/post/2.jpg" alt="" />
@@ -272,10 +272,10 @@ class Navigation extends Component {
                                                             <p>Available</p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="hd-mg-va">
-                                                <a href="#">View All</a>
+                                                <Link to="#">View All</Link>
                                             </div>
                                         </div>
                                     </li>

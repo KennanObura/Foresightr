@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Todolist extends Component {
@@ -34,7 +35,7 @@ class Todolist extends Component {
                                     <td className="">
                                         <label><input type="checkbox"  className="i-checks"  /></label>
                                     </td>
-                                    <td><a href="#">Jeremy Massey</a></td>
+                                    <td><Link to="#">Jeremy Massey</Link></td>
 
                                     <td className="text-right mail-date">Tue, Nov 25</td>
                                 </tr>
@@ -44,7 +45,7 @@ class Todolist extends Component {
                                     <td className="">
                                         <label><input type="checkbox"  className="i-checks" /></label>
                                     </td>
-                                    <td><a href="#">Ivor Rios</a> <span className="label label-info">Social</span>
+                                    <td><Link to="#">Ivor Rios</Link> <span className="label label-info">Social</span>
                                     </td>
                                     <td className="text-right mail-date">Sat, Dec 12</td>
                                 </tr>
@@ -52,14 +53,14 @@ class Todolist extends Component {
                                     <td className="">
                                         <label><input type="checkbox" className="i-checks" /></label>
                                     </td>
-                                    <td><a href="#">Maxwell Murphy</a></td>
+                                    <td><Link to="#">Maxwell Murphy</Link></td>
                                     <td className="text-right mail-date">Sun, May 17</td>
                                 </tr>
                                 <tr>
                                     <td className="">
                                         <label><input type="checkbox" className="i-checks" /></label>
                                     </td>
-                                    <td><a href="#">Henry Patterson</a></td>
+                                    <td><Link to="#">Henry Patterson</Link></td>
                                     <td className="text-right mail-date">Thu, Aug 06</td>
                                 </tr>
 
@@ -67,11 +68,11 @@ class Todolist extends Component {
                         </table>
                         <div className="pagination-inbox">
                             <ul className="wizard-nav-ac">
-                                <li><a className="btn" href="#"><i className="notika-icon notika-back"></i></a></li>
-                                <li className="active"><a className="btn" href="#">1</a></li>
-                                <li><a className="btn" href="#">2</a></li>
-                                <li><a className="btn" href="#">3</a></li>
-                                <li><a className="btn" href="#"><i className="notika-icon notika-next-pro"></i></a></li>
+                                <li><Link className="btn" to="#"><i className="notika-icon notika-back"></i></Link></li>
+                                <li className="active"><Link className="btn" to="#">1</Link></li>
+                                <li><Link className="btn" to="#">2</Link></li>
+                                <li><Link className="btn" to="#">3</Link></li>
+                                <li><Link className="btn" to="#"><i className="notika-icon notika-next-pro"></i></Link></li>
                             </ul>
                         </div>
                     </div>

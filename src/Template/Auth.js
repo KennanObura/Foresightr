@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-
+import { Link } from 'react-router-dom';
 
 
 class Auth extends Component {
@@ -30,12 +29,12 @@ class Auth extends Component {
                             <div className="fm-checkbox">
                                 <label><input type="checkbox" className="i-checks" /> <i></i> Keep me signed in</label>
                             </div>
-                            <a href="#l-register" data-ma-action="nk-login-switch" data-ma-block="#l-register" className="btn btn-login btn-success btn-float"><i className="notika-icon notika-right-arrow right-arrow-ant"></i></a>
+                            <Link to="#l-register" data-ma-action="nk-login-switch" data-ma-block="#l-register" className="btn btn-login btn-success btn-float"><i className="notika-icon notika-right-arrow right-arrow-ant"></i></Link>
                         </div>
 
                         <div className="nk-navigation nk-lg-ic">
-                            <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-register"><i className="notika-icon notika-plus-symbol"></i> <span>Register</span></a>
-                            <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></a>
+                            <Link to="#" data-ma-action="nk-login-switch" data-ma-block="#l-register"><i className="notika-icon notika-plus-symbol"></i> <span>Register</span></Link>
+                            <Link to="#" data-ma-action="nk-login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></Link>
                         </div>
                     </div>
 
@@ -63,12 +62,12 @@ class Auth extends Component {
                                 </div>
                             </div>
 
-                            <a href="#l-login" data-ma-action="nk-login-switch" data-ma-block="#l-login" className="btn btn-login btn-success btn-float"><i className="notika-icon notika-right-arrow"></i></a>
+                            <Link to="#l-login" data-ma-action="nk-login-switch" data-ma-block="#l-login" className="btn btn-login btn-success btn-float"><i className="notika-icon notika-right-arrow"></i></Link>
                         </div>
 
                         <div className="nk-navigation rg-ic-stl">
-                            <a href="#" data-ma-action="nk-login-switch" data-ma-block="#l-login"><i className="notika-icon notika-right-arrow"></i> <span>Sign in</span></a>
-                            <a href="" data-ma-action="nk-login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></a>
+                            <Link to="#" data-ma-action="nk-login-switch" data-ma-block="#l-login"><i className="notika-icon notika-right-arrow"></i> <span>Sign in</span></Link>
+                            <Link to="" data-ma-action="nk-login-switch" data-ma-block="#l-forget-password"><i>?</i> <span>Forgot Password</span></Link>
                         </div>
                     </div>
 
@@ -84,12 +83,12 @@ class Auth extends Component {
                                 </div>
                             </div>
 
-                            <a href="#l-login" data-ma-action="nk-login-switch" data-ma-block="#l-login" className="btn btn-login btn-success btn-float"><i className="notika-icon notika-right-arrow"></i></a>
+                            <Link to="#l-login" data-ma-action="nk-login-switch" data-ma-block="#l-login" className="btn btn-login btn-success btn-float"><i className="notika-icon notika-right-arrow"></i></Link>
                         </div>
 
                         <div className="nk-navigation nk-lg-ic rg-ic-stl">
-                            <a href="" data-ma-action="nk-login-switch" data-ma-block="#l-login"><i className="notika-icon notika-right-arrow"></i> <span>Sign in</span></a>
-                            <a href="" data-ma-action="nk-login-switch" data-ma-block="#l-register"><i className="notika-icon notika-plus-symbol"></i> <span>Register</span></a>
+                            <Link to="" data-ma-action="nk-login-switch" data-ma-block="#l-login"><i className="notika-icon notika-right-arrow"></i> <span>Sign in</span></Link>
+                            <Link to="" data-ma-action="nk-login-switch" data-ma-block="#l-register"><i className="notika-icon notika-plus-symbol"></i> <span>Register</span></Link>
                         </div>
                     </div>
                 </div>

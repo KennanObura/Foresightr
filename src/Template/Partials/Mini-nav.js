@@ -33,7 +33,7 @@ class Mininav extends Component {
                                 <div id="mailbox" className="tab-pane active notika-tab-menu-bg animated flipInX">
                                     <ul className="notika-main-menu-dropdown">
                                         <li><Link to="/home/">Running</Link>
-                                        </li>
+                                      </li>
                                         <li><Link to="/home/achieved">Achieved</Link>
                                         </li>
                                         <li><Link to="/home/flagged">Flagged</Link>
